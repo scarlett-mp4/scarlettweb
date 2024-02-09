@@ -1,0 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1C1F4A;
+  padding: 20px 20px 5% 5%;
+}
+
+.container {
+  background-color: #1C1F4A;
+  width: 90%;
+  height: calc(100% - 40px);
+  display: flex;
+  flex-direction: row;
+}
