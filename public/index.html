@@ -20,5 +20,14 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      var btn = document.querySelector("body");
+      btn.onmousemove = function (e) {
+        var x = e.pageX - btn.offsetLeft;
+        var y = e.pageY - btn.offsetTop;
+        btn.style.setProperty("--x", x + "px");
+        btn.style.setProperty("--y", y + "px");
+      };
+    </script>
   </body>
 </html>
