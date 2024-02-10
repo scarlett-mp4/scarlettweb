@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import "../assets/stylesheets/error.scss";
 
 export default class Error extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   status = this.props.err.item.status;
   text = this.props.err.item.statusText;
   message = this.props.err.item.error.message;

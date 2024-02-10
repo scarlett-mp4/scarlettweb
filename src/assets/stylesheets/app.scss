@@ -8,6 +8,16 @@
 
 body {
   background-color: #1c1f4a;
+  animation: fadeIn .3s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .page {
@@ -18,7 +28,7 @@ body {
 }
 
 .container {
-  background-color: #1c1f4a;
+  background-color: transparent;
   width: 90%;
   height: calc(100% - 40px);
   display: flex;
@@ -35,6 +45,12 @@ body {
   .container {
     width: calc(100% - 10px);
     height: calc(100% - 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    background-image: linear-gradient(0deg, #1c1f4a, #22265e);
   }
 }
 

@@ -1,15 +1,16 @@
 import React, { Component } from "react";
-import Intro from "./Intro";
+import { motion } from "framer-motion";
 import "../assets/stylesheets/about.scss";
 
 export default class About extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
-      <div className="about">
+      <motion.div
+        initial={{ opacity: 0, rotateX: 90 }}
+        animate={{ opacity: 1, rotateX: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="about"
+      >
         <div className="about-divider"></div>
         <div className="about-content">
           <span className="about-emoji">✏️</span>
@@ -50,7 +51,7 @@ export default class About extends Component {
           </div>
         </div>
         <div className="about-divider"></div>
-      </div>
+      </motion.div>
     );
   }
 }

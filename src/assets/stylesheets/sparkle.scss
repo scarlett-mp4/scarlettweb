@@ -4,6 +4,16 @@
   scale: 70%;
 }
 
+@keyframes init {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+
 #sparkle-1 {
   transform: scaleY(1.3) translate(-450px, 70px) rotate(10deg);
   animation: sparkle-1 10s infinite ease-in-out;

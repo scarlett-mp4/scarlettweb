@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import NavBar from "../components/NavBar";
 import Error from "../components/Error";
 import { useRouteError } from "react-router-dom";

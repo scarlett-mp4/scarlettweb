@@ -10,10 +10,6 @@ import TwitterSVG from "../assets/svgs/twitter.svg";
 import "../assets/stylesheets/navbar.scss";
 
 export default class NavBar extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     switch (this.props.currentPage) {
       case "home":
@@ -30,6 +26,8 @@ export default class NavBar extends Component {
       case "contact":
         document.getElementById("underline-contact").style.visibility =
           "visible";
+        break;
+      default:
         break;
     }
   }
@@ -93,6 +91,7 @@ export default class NavBar extends Component {
               className="navbar-sociallink"
               href="https://twitter.com/xSkarless"
               target="_blank"
+              rel="noreferrer"
             >
               <img className="navbar-sociallink-svg" src={TwitterSVG} alt="" />
             </a>
@@ -100,6 +99,7 @@ export default class NavBar extends Component {
               className="navbar-sociallink"
               href="https://github.com/Skarless"
               target="_blank"
+              rel="noreferrer"
             >
               <img className="navbar-sociallink-svg" src={GithubSVG} alt="" />
             </a>
@@ -107,6 +107,7 @@ export default class NavBar extends Component {
               className="navbar-sociallink"
               href="https://www.linkedin.com/in/scarlett-kadan-705aa8294/"
               target="_blank"
+              rel="noreferrer"
             >
               <img className="navbar-sociallink-svg" src={LinkedInSVG} alt="" />
             </a>
