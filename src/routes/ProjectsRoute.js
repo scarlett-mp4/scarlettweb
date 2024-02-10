@@ -2,17 +2,17 @@ import React, { Component } from "react";
 import NavBar from "../components/NavBar";
 import "../assets/stylesheets/app.scss";
 
-export default class HomeRoute extends Component {
+export default class ProjectsRoute extends Component {
   constructor(props) {
     super(props);
-    document.title = "Scarlett Kadan | Home";
+    document.title = "Scarlett Kadan | Projects";
   }
 
   render() {
     return (
       <div className="page">
         <div className="container">
-          <NavBar currentPage="home" />
+          <NavBar currentPage="projects" />
         </div>
       </div>
     );

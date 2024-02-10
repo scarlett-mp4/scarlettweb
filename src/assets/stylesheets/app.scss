@@ -9,14 +9,25 @@
 .page {
   width: 100vw;
   height: 100vh;
-  background-color: #1C1F4A;
+  background-color: #1c1f4a;
   padding: 20px 20px 5% 5%;
 }
 
 .container {
-  background-color: #1C1F4A;
+  background-color: #1c1f4a;
   width: 90%;
   height: calc(100% - 40px);
   display: flex;
   flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 20px 20px 5px 5px;
+  }
+
+  .container {
+    width: calc(100% - 10px);
+    height: calc(100% - 40px);
+  }
 }
