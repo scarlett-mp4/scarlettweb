@@ -68,3 +68,22 @@
     transform: scale(70%) scaleY(1.3) translate(410px, -40px) rotate(10deg);
   }
 }
+
+@media (max-width: 768px) {
+  .sparkle {
+    scale: 65%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sparkle {
+    scale: 48%;
+  }
+}
+
+@media (max-width: 350px) {
+  .sparkle {
+    visibility: hidden;
+    scale: 0%;
+  }
+}

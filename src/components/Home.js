@@ -66,7 +66,7 @@ export default class Home extends Component {
               <span className="intro-generic">I'm a </span>
               <div className="typing">
                 <span
-                  className="hero glitch layers"
+                  className="typing-text glitch layers"
                   data-text={this.state.typing}
                 >
                   {this.state.typing}

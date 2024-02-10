@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
   width: 700px;
-  height: 300px;
+  height: auto;
 }
 
 .intro {
@@ -87,11 +87,81 @@
   font-weight: medium;
   color: white;
   margin-left: 20px;
-  background-color: #474747;
+  background-image: linear-gradient(0deg, #474747, rgb(121, 121, 121));
   border-radius: 15px;
   text-align: center;
   padding: 8px 20px 8px 20px;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typing-text {
+  width: auto;
+  height: auto;
+  font-family: "jetbrains mono";
+  font-size: 24px;
+  font-weight: medium;
+  color: white;
+  z-index: 2;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 768px) {
+  .l2 {
+    margin-left: 80px;
+  }
+
+  .l3 {
+    margin-left: 160px;
+  }
+
+  .intro-generic {
+    font-size: 24px;
+  }
+
+  .intro-name {
+    font-size: 36px;
+  }
+
+  .typing {
+    width: 150px;
+    height: 20px;
+  }
+
+  .typing-text {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .l2 {
+    margin-left: 40px;
+  }
+
+  .l3 {
+    margin-left: 80px;
+  }
+
+  .intro-generic {
+    font-size: 18px;
+  }
+
+  .intro-name {
+    font-size: 30px;
+  }
+
+  .typing {
+    width: 110px;
+    height: 10px;
+  }
+
+  .typing-text {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
 }
