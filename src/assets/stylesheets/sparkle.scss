@@ -72,19 +72,18 @@
 
 @media (max-width: 768px) {
   .sparkle {
-    scale: 65%;
+    scale: 45%;
   }
 }
 
 @media (max-width: 480px) {
   .sparkle {
-    scale: 48%;
+    scale: 35%;
   }
 }
 
 @media (max-width: 350px) {
   .sparkle {
-    visibility: hidden;
-    scale: 0%;
+    scale: 30%;
   }
 }
