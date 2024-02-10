@@ -4,11 +4,13 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #1c1f4a;
   animation: fadeIn .3s ease-in;
+  overflow-x: hidden;
 }
 
 @keyframes fadeIn {
@@ -25,6 +27,7 @@ body {
   height: 100vh;
   background-color: #1c1f4a;
   padding: 20px 20px 5% 5%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -35,6 +38,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 @media (max-width: 600px) {
@@ -51,14 +55,8 @@ body {
 @media (max-width: 480px) {
   .page {
     background-image: linear-gradient(0deg, #1c1f4a, #22265e);
+    overflow-x: hidden;
   }
-}
-
-body {
-  border: none;
-  cursor: default;
-  outline: none;
-  overflow: hidden;
 }
 
 body::before {
