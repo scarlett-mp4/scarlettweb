@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import HomeSVG from "../assets/svgs/home.svg";
 import ProjectsSVG from "../assets/svgs/projects.svg";
 import ResumeSVG from "../assets/svgs/resume.svg";
@@ -73,7 +73,10 @@ export default class NavBar extends Component {
                   className="navbar-link-underline"
                 ></div>
               </NavLink>
-              <NavLink className="navbar-link" to="/contact">
+              <NavLink
+                className="navbar-link"
+                to="mailto:contact.scarlettkadan@gmail.com"
+              >
                 <div className="navbar-link-content">
                   <img className="navbar-link-svg" src={ContactSVG} alt="" />
                   <span className="navbar-link-text">Contact</span>
