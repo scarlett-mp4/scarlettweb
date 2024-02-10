@@ -1,0 +1,129 @@
+.about {
+  width: 35%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-divider {
+  width: 100%;
+  height: 4px;
+  background-color: #2e3464;
+  border-radius: 50px;
+}
+
+.about-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 0px;
+  margin: 20px 0px 20px 0px;
+}
+
+.about-emoji {
+  width: 70px;
+  height: auto;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.about-text {
+  width: calc(100% - 70px);
+  height: auto;
+  font-size: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-direction: column;
+}
+
+.about-title {
+  width: auto;
+  height: auto;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  font-family: "roboto";
+  font-weight: medium;
+  margin-top: 4px;
+  color: #FBEFF4;
+}
+
+.about-description {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  color: white;
+  font-family: "roboto";
+  font-weight: medium;
+  color: #C0C0C0;
+}
+
+.about-p-list {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 10px;
+  background-image: linear-gradient(0deg, #6970cd, #d6b3f3);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+
+}
+
+.about-p-list-item {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  color: white;
+  font-family: "roboto";
+  font-weight: bold;
+  color: #e71a1a;
+  margin-left: 20px;
+}
+
+.about-p {
+  width: auto;
+  height: auto;
+  color: white;
+  margin-bottom: 10px;
+  font-family: "roboto";
+  font-weight: medium;
+  color: #C0C0C0;
+}
+
+.about-p-bold {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+  font-family: "roboto";
+  font-weight: bold;
+  color: #FBEFF4;
+}
+
+@media (max-width: 1200px) {
+  .about {
+    margin-top: 100px;
+    width: 75%;
+    height: auto;
+    display: flex;
+    overflow: visible;
+  }
+}
