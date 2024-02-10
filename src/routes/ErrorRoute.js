@@ -1,20 +1,20 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
-import Projects from "../components/Projects";
+import Error from "../components/Error";
 import "../assets/stylesheets/app.scss";
 
-export default class ProjectsRoute extends Component {
+export default class ErrorRoute extends Component {
   constructor(props) {
     super(props);
-    document.title = "Scarlett Kadan | Projects";
+    document.title = "Scarlett Kadan | Error";
   }
 
   render() {
     return (
       <div className="page">
         <div className="container">
-          <NavBar currentPage="projects" />
-          <Projects />
+          <NavBar currentPage="error" />
+          <Error />
         </div>
       </div>
     );

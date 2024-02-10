@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
+import Home from "../components/Home";
 import "../assets/stylesheets/app.scss";
 
 export default class HomeRoute extends Component {
@@ -13,6 +14,7 @@ export default class HomeRoute extends Component {
       <div className="page">
         <div className="container">
           <NavBar currentPage="home" />
+          <Home />
         </div>
       </div>
     );
