@@ -39,20 +39,11 @@ body {
 }
 
 body {
-  transition: all 0.5s ease;
   border: none;
-  color: #111;
   cursor: default;
   outline: none;
   overflow: hidden;
-  display: block;
-  box-shadow: 1px 1px 0 rgba(25, 25, 25, 0.25);
 }
-
-body:hover {
-  box-shadow: 0px 11px 30px rgba(25, 25, 25, 0.25);
-}
-
 
 body::before {
   --size: 0;

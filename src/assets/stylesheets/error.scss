@@ -3,5 +3,40 @@
   height: calc(100% - 130px);
   margin-top: 30px;
   z-index: 10;
-  border: red 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding: 30px;
+  border: #2e3464 solid 4px;
+  border-radius: 20px;
+  margin-bottom: 50vh;
+}
+
+h1 {
+  width: auto;
+  height: auto;
+  color: #fbeff4;
+  font-size: 40px;
+  font-family: "roboto";
+  text-align: center;
+}
+
+h2 {
+  width: auto;
+  height: auto;
+  color: #fbeff4;
+  font-size: 20px;
+  font-family: "roboto";
+  text-align: center;
+  margin-top: 10px;
 }

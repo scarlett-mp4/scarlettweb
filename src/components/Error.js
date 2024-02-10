@@ -6,7 +6,20 @@ export default class Error extends Component {
     super(props);
   }
 
+  status = this.props.err.item.status;
+  text = this.props.err.item.statusText;
+  message = this.props.err.item.error.message;
+
   render() {
-    return <div className="error"></div>;
+    return (
+      <div className="error">
+        <div className="c">
+          <h1>
+            {this.status}: {this.text}
+          </h1>
+          <h2>{this.message}</h2>
+        </div>
+      </div>
+    );
   }
 }
