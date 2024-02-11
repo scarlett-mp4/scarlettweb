@@ -4,25 +4,26 @@ import "../assets/stylesheets/proj.scss";
 export default class Proj extends Component {
   constructor(props) {
     super(props);
+    this.id = Math.random().toString(36).substring(7);
     this.style = document.createElement("style");
     this.style.innerHTML = `
-    .proj {
+    #${this.id} {
       background-image: linear-gradient(270deg, ${this.props.c1}, ${this.props.c2}, ${this.props.c3});
     }
     
-    .proj::after {
+    #${this.id}::after {
       background-image: url("${this.props.n}");
     }
   `;
   }
 
   componentDidMount() {
-    document.head.appendChild(this.style);
+    document.getElementById(this.id).appendChild(this.style);
   }
 
   render() {
     return (
-      <a href={this.props.to} target="_blank" rel="noreferrer" className="proj">
+      <a id={this.id} href={this.props.to} target="_blank" rel="noreferrer" className="proj">
         <div className="proj-header">
           <div className="proj-language">
             <img className="proj-language-icon" src={this.props.icon} alt="" />
