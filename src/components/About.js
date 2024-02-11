@@ -43,6 +43,7 @@ export default class About extends Component {
                 <span className="about-p-list-item">• Javascript</span>
                 <span className="about-p-list-item">• HTML + CSS</span>
                 <span className="about-p-list-item">• React</span>
+                <span className="about-p-list-item">• Java</span>
                 <span className="about-p-list-item">• Python</span>
                 <span className="about-p-list-item">• C#</span>
                 <span className="about-p-list-item">• MySQL</span>
