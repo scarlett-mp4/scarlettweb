@@ -43,7 +43,7 @@ export default class Projects extends Component {
             c2="#ff8cb6"
             c3="#800fbd"
             n="https://cdn.discordapp.com/attachments/1035798463377588254/1206270487337111572/fastnoise-perlin.png?ex=65db65ef&is=65c8f0ef&hm=0ddb066e85191ac3223ecaccf516433e5673414e52a246e29c2e2b25817d91b2&"
-            to="https://git.myitr.org/scarlett/ITR-Website"
+            to="https://github.com/Skarless/mips-error-detection"
           />
           <Proj
             title="IllinoisTechRobotics.org 🤖"
