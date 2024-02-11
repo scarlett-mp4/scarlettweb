@@ -1,10 +1,10 @@
 .proj {
   position: relative;
-  width: 49%;
+  width: calc(49% - 20px);
   height: 150px;
   border-radius: 10px;
   background-size: 400% 400%;
-  overflow: hidden;
+  overflow: visible;
   border: rgba(255, 255, 255, 0.349) 1px solid;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -17,9 +17,7 @@
   flex-direction: column;
   text-decoration: none;
   animation: fadein .5s, gradientFlow 15s ease infinite;
-  overflow: visible;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 .proj::after {
@@ -32,6 +30,7 @@
   background-size: 1000px 1000px;
   opacity: 0.4;
   pointer-events: none;
+  border-radius: 10px;
 }
 
 .proj:hover {

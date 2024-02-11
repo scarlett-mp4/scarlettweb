@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import styled from 'styled-components';
 import "../assets/stylesheets/proj.scss";
 
-// Define ProjLink outside of the Proj class
 const ProjLink = styled.a`
   &::after {
     background-image: url("${props => props.n}");
@@ -12,10 +11,8 @@ const ProjLink = styled.a`
 
 export default class Proj extends Component {
   render() {
-    // Use ProjLink with props passed from Proj
     return (
       <ProjLink
-        id={this.props.id}
         href={this.props.to}
         target="_blank"
         rel="noreferrer"
