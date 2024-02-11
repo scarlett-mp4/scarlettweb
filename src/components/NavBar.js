@@ -61,16 +61,6 @@ export default class NavBar extends Component {
                   className="navbar-link-underline"
                 ></div>
               </NavLink>
-              <NavLink className="navbar-link" to="/resume">
-                <div className="navbar-link-content">
-                  <img className="navbar-link-svg" src={ResumeSVG} alt="" />
-                  <span className="navbar-link-text">Resume</span>
-                </div>
-                <div
-                  id="underline-resume"
-                  className="navbar-link-underline"
-                ></div>
-              </NavLink>
               <NavLink
                 className="navbar-link"
                 to="mailto:contact.scarlettkadan@gmail.com"
