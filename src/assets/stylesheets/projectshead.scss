@@ -11,7 +11,7 @@
   .projects-title {
     width: auto;
     height: auto;
-    font-family: "roboto";
+    font-family: roboto, sans-serif;
     color: #fbeff4;
     font-weight: 500;
     font-size: 22px;
@@ -21,13 +21,12 @@
   .projects-subtitle {
     width: auto;
     height: auto;
-    font-family: "roboto";
+    font-family: roboto, sans-serif;
     font-weight: 500;
     font-size: 36px;
     background-image: linear-gradient(0deg, #6970cd, #d6b3f3);
     background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
   }
@@ -35,18 +34,17 @@
   .projects-divider {
     width: 100%;
     height: 4px;
-    margin-top: 10px;
     background-color: #2e3464;
     border-radius: 50px;
     margin-top: 20px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (width <= 768px) {
     .projects-title {
       font-size: 18px;
     }
   
     .projects-subtitle {
-      font-size: 28px;
+      font-size: 24px;
     }
   }

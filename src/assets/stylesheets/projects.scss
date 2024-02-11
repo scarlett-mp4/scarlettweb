@@ -5,7 +5,7 @@
   z-index: 10;
   border: transparent 1px solid;
   display: flex;
-  padding: 0px;
+  padding: 0;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -20,14 +20,13 @@
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  margin-top: 20px;
   overflow: visible;
   overflow-y: scroll;
-  margin-top: 30px;
   padding-bottom: 100px;
+  padding-top: 30px;
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .projects {
     width: 95%;
   }

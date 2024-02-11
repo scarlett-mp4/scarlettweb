@@ -21,8 +21,8 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
-  padding: 0px;
-  margin: 40px 0px 20px 0px;
+  padding: 0;
+  margin: 40px 0 20px;
 }
 
 .about-emoji {
@@ -49,10 +49,8 @@
   width: auto;
   height: auto;
   font-size: 32px;
-  font-weight: bold;
-  color: white;
   margin-bottom: 10px;
-  font-family: "roboto";
+  font-family: roboto, sans-serif;
   font-weight: medium;
   margin-top: 4px;
   color: #fbeff4;
@@ -62,8 +60,7 @@
   width: auto;
   height: auto;
   font-size: 20px;
-  color: white;
-  font-family: "roboto";
+  font-family: roboto, sans-serif;
   font-weight: medium;
   color: #c0c0c0;
 }
@@ -78,8 +75,7 @@
   margin-top: 10px;
   background-image: linear-gradient(0deg, #6970cd, #d6b3f3);
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
@@ -88,8 +84,7 @@
   width: auto;
   height: auto;
   font-size: 20px;
-  color: white;
-  font-family: "roboto";
+  font-family: roboto, sans-serif;
   font-weight: bold;
   color: #e71a1a;
   margin-left: 20px;
@@ -98,9 +93,8 @@
 .about-p {
   width: auto;
   height: auto;
-  color: white;
   margin-bottom: 10px;
-  font-family: "roboto";
+  font-family: roboto, sans-serif;
   font-weight: medium;
   color: #c0c0c0;
 }
@@ -109,14 +103,13 @@
   width: auto;
   height: auto;
   font-size: 20px;
-  color: white;
   margin-bottom: 10px;
-  font-family: "roboto";
+  font-family: roboto, sans-serif;
   font-weight: bold;
   color: #fbeff4;
 }
 
-@media (max-width: 1550px) {
+@media (width <= 1550px) {
   .about {
     margin-top: 40px;
     width: 95%;
@@ -126,7 +119,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .about {
     margin-bottom: 100px;
   }

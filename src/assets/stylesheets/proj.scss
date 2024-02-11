@@ -5,10 +5,8 @@
   border-radius: 10px;
   background-size: 400% 400%;
   overflow: visible;
-  border: rgba(255, 255, 255, 0.349) 1px solid;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  border: rgb(255 255 255 / 34.9%) 1px solid;
+  box-shadow: 10px 10px 5px 0 rgb(0 0 0 / 75%);
   transition: all 0.3s ease;
   cursor: pointer;
   display: flex;
@@ -16,17 +14,14 @@
   justify-content: center;
   flex-direction: column;
   text-decoration: none;
-  animation: fadein .5s, gradientFlow 15s ease infinite;
+  animation: fadein .5s, gradient-flow 15s ease infinite;
   margin: 10px;
 }
 
 .proj::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   background-size: 1000px 1000px;
   opacity: 0.4;
   pointer-events: none;
@@ -38,13 +33,15 @@
   transform: translate3d(-5px, -5px, 0);
 }
 
-@keyframes gradientFlow {
+@keyframes gradient-flow {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -55,6 +52,7 @@
     opacity: 0;
     scale: 0.5;
   }
+
   to {
     opacity: 1;
     scale: 1;
@@ -69,15 +67,15 @@
   width: 95%;
   height: 20%;
   z-index: 10;
-  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 0 5px rgb(0 0 0 / 50%));
   text-decoration: none;
 }
 
 .proj-time {
   width: auto;
   height: auto;
-  color: rgb(255, 255, 255);
-  font-family: "roboto";
+  color: rgb(255 255 255);
+  font-family: roboto, sans-serif;
   font-size: 18px;
   text-decoration: none;
 }
@@ -100,8 +98,8 @@
 .proj-language-text {
   width: auto;
   height: auto;
-  color: rgb(255, 255, 255);
-  font-family: "roboto";
+  color: rgb(255 255 255);
+  font-family: roboto, sans-serif;
   font-size: 20px;
   margin-left: 5px;
   text-decoration: none;
@@ -110,12 +108,12 @@
 .proj-title {
   width: 95%;
   height: auto;
-  color: rgb(255, 255, 255);
-  font-family: "roboto";
+  color: rgb(255 255 255);
+  font-family: roboto, sans-serif;
   font-size: 28px;
   z-index: 10;
   font-weight: bold;
-  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 0 5px rgb(0 0 0 / 50%));
   margin-top: 10px;
   margin-left: 10px;
   text-decoration: none;
@@ -124,18 +122,18 @@
 .proj-desc {
   width: 95%;
   height: auto;
-  color: rgb(255, 255, 255);
-  font-family: "roboto";
+  color: rgb(255 255 255);
+  font-family: roboto, sans-serif;
   font-size: 18px;
   z-index: 10;
   font-weight: medium;
-  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 0 5px rgb(0 0 0 / 50%));
   margin-left: 10px;
   text-decoration: none;
   margin-top: 5px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (width <= 1100px) {
   .proj {
     width: 100%;
   }
@@ -161,7 +159,7 @@
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (width <= 470px) {
   .proj {
     width: 100%;
   }

@@ -8,22 +8,21 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  padding: 0px;
+  padding: 0;
   overflow: hidden;
 }
 
-@media (max-width: 1550px) {
+@media (width <= 1550px) {
   .home {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     overflow: visible;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: hidden scroll;
   }
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .home {
     width: 100%;
   }

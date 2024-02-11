@@ -1,6 +1,6 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -9,14 +9,15 @@
 
 body {
   background-color: #1c1f4a;
-  animation: fadeIn 0.3s ease-in;
+  animation: fade-in 0.3s ease-in;
   overflow-x: hidden;
 }
 
-@keyframes fadeIn {
+@keyframes fade-in {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -41,7 +42,7 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .page {
     padding: 20px 20px 5px 5px;
   }
@@ -52,16 +53,17 @@ body {
   }
 }
 
-@media (max-width: 1499px) {
+@media (width <= 1499px) {
   .page {
     background-image: linear-gradient(0deg, #1c1f4a, #22265e);
     overflow-x: hidden;
   }
 }
 
-@media (min-width: 1500px) {
+@media (width >= 1500px) {
   body::before {
     --size: 0;
+
     content: "";
     position: absolute;
     left: var(--x);
@@ -72,6 +74,7 @@ body {
     transform: translate(-50%, -50%);
     transition: width 0.2s ease, height 0.2s ease;
   }
+
   body:hover::before {
     --size: 1000px;
   }

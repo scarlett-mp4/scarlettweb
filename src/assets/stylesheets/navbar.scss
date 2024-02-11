@@ -1,4 +1,4 @@
-@-webkit-keyframes slide {
+@keyframes slide {
   100% {
     left: 0;
   }
@@ -8,6 +8,7 @@
   0% {
     transform: scale(0%);
   }
+
   100% {
     transform: scale(100%);
   }
@@ -16,8 +17,8 @@
 .divider-c {
   width: 100%;
   height: 100px;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,15 +41,14 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   scale: 80%;
 }
 
 .navbar-linksbar {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -78,8 +78,7 @@
   font-size: 36px;
   font-weight: medium;
   color: #fbeff4;
-  font-family: "roboto";
-  text-decoration: none;
+  font-family: roboto, sans-serif;
   text-decoration: none;
 }
 
@@ -96,7 +95,7 @@
 .navbar-link {
   width: auto;
   height: 50px;
-  margin: 0px 10px 0px 10px;
+  margin: 0 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,7 +106,7 @@
 }
 
 .navbar-link:hover {
-  opacity: 85%;
+  opacity: 0.85;
 }
 
 .navbar-link-content {
@@ -132,7 +131,7 @@
   width: auto;
   height: 100%;
   color: #fbeff4;
-  font-family: "roboto";
+  font-family: roboto, sans-serif;
   font-weight: medium;
   font-size: 20px;
   text-align: center;
@@ -151,7 +150,7 @@
 }
 
 .navbar-link-underline:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .navbar-socialbar {
@@ -179,12 +178,12 @@
   aspect-ratio: 1/1;
 }
 
-@media (max-width: 1000px) {
+@media (width <= 1000px) {
   .navbar {
     justify-content: center;
     align-items: center;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
   }
 
   .navbar-socialbar {
@@ -197,46 +196,42 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
   }
 
   .navbar-linksbar-links {
     justify-content: center;
     margin: 10px;
     width: auto;
-    padding: 0px;
+    padding: 0;
   }
 
   .navbar-logo {
-    margin: 0px;
+    margin: 0;
   }
 }
 
-@media (max-width: 625px) {
+@media (width <= 625px) {
   .navbar {
     scale: 100%;
   }
 
   .divider {
     width: 90%;
-  }
-
-  .divider {
     margin-top: 10px;
   }
 
   .navbar-linksbar {
     display: flex;
     flex-direction: column;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
   }
 
   .navbar-link {
     scale: 75%;
-    margin: 0px;
-    margin: 0px;
+    margin: 0;
   }
 
   .navbar-logo {
@@ -244,7 +239,7 @@
     height: 30px;
     border-radius: 5px;
     margin-bottom: 10px;
-    padding: 0px;
+    padding: 0;
   }
 
   .navbar-logo-text {
@@ -254,16 +249,16 @@
   .navbar-linksbar-links {
     width: 100%;
     height: 35px;
-    margin: 0px;
+    margin: 0;
   }
 }
 
-@media (max-width: 400px) {
+@media (width <= 400px) {
   .navbar {
     justify-content: center;
     align-items: center;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
   }
 
   .navbar-linksbar {
@@ -271,20 +266,20 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
   }
 
   .navbar-linksbar-links {
     justify-content: center;
-    margin: 0px;
+    margin: 0;
     width: auto;
-    padding: 0px;
+    padding: 0;
   }
 
   .navbar-link {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
   }
 
   .navbar-link-text {
