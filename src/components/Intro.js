@@ -49,10 +49,10 @@ export default class Intro extends Component {
   render() {
     return (
       <div className="spark">
-        <img id="sparkle-1" className="sparkle" src={Sparkle} alt="" />
-        <img id="sparkle-2" className="sparkle" src={Sparkle} alt="" />
-        <img id="sparkle-3" className="sparkle" src={Sparkle} alt="" />
-        <img id="sparkle-4" className="sparkle" src={Sparkle} alt="" />
+        <img id="sparkle-1" className="sparkle" alt="✦" src={Sparkle} />
+        <img id="sparkle-2" className="sparkle" alt="✦" src={Sparkle} />
+        <img id="sparkle-3" className="sparkle" alt="✦" src={Sparkle} />
+        <img id="sparkle-4" className="sparkle" alt="✦" src={Sparkle} />
 
         <div className="intro">
           <motion.div
