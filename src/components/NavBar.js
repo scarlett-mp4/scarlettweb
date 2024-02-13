@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import HomeSVG from "../assets/svgs/home.svg";
 import ProjectsSVG from "../assets/svgs/projects.svg";
-import ResumeSVG from "../assets/svgs/resume.svg";
 import ContactSVG from "../assets/svgs/contact.svg";
 import GithubSVG from "../assets/svgs/github.svg";
 import LinkedInSVG from "../assets/svgs/linkedin.svg";
