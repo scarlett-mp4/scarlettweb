@@ -1,7 +1,7 @@
 .proj {
   position: relative;
-  width: calc(49% - 20px);
-  height: 150px;
+  width: 95%;
+  height: 175px;
   border-radius: 10px;
   background-size: 400% 400%;
   overflow: visible;
@@ -11,7 +11,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   text-decoration: none;
   animation: fadein .5s, gradient-flow 15s ease infinite;
@@ -69,6 +69,7 @@
   z-index: 10;
   filter: drop-shadow(0 0 5px rgb(0 0 0 / 50%));
   text-decoration: none;
+  margin-top: 10px;
 }
 
 .proj-time {
@@ -124,18 +125,18 @@
   height: auto;
   color: rgb(255 255 255);
   font-family: roboto, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   z-index: 10;
   font-weight: medium;
   filter: drop-shadow(0 0 5px rgb(0 0 0 / 50%));
   margin-left: 10px;
   text-decoration: none;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
-@media screen and (width <= 1100px) {
+@media screen and (width <= 1400px) {
   .proj {
-    width: 100%;
+    width: 90%;
   }
 
   .proj-title {
@@ -160,27 +161,23 @@
 }
 
 @media screen and (width <= 470px) {
-  .proj {
-    width: 100%;
-  }
-
   .proj-title {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .proj-desc {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .proj-time {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .proj-language-text {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .proj-language-icon {
-    width: 24px;
+    width: 16px;
   }
 }

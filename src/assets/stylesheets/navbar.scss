@@ -15,7 +15,7 @@
 }
 
 .divider-c {
-  width: 100%;
+  width: 80%;
   height: 100px;
   margin: 0;
   padding: 0;
@@ -27,11 +27,11 @@
 }
 
 .divider {
-  width: 80%;
+  width: 100%;
   height: 4px;
-  margin-top: 10px;
   background-color: #2e3464;
   border-radius: 50px;
+  margin-top: 10px;
 }
 
 .navbar {
@@ -43,7 +43,6 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  scale: 80%;
 }
 
 .navbar-linksbar {
@@ -58,24 +57,24 @@
 
 .navbar-logo {
   aspect-ratio: 1/1;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   background-color: #a77acd;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 20px;
+  margin-right: 10px;
   text-decoration: none;
 }
 
 .navbar-logo-text {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: medium;
   color: #fbeff4;
   font-family: roboto, sans-serif;
@@ -83,26 +82,25 @@
 }
 
 .navbar-linksbar-links {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  width: 80%;
-  height: 10%;
+  width: auto;
+  height: 100%;
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-link {
   width: auto;
-  height: 50px;
+  height: auto;
   margin: 0 10px;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-decoration: none;
-  margin-bottom: 7px;
-  transition: 0.2s ease-in-out;
 }
 
 .navbar-link:hover {
@@ -111,19 +109,18 @@
 
 .navbar-link-content {
   width: auto;
-  height: 80%;
+  height: auto;
+  flex-direction: row;
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  text-decoration: none;
 }
 
 .navbar-link-svg {
   width: auto;
-  height: 60%;
-  margin-top: 4px;
-  margin-right: 5px;
+  height: 25px;
+  margin-right: 4px;
   aspect-ratio: 1/1;
 }
 
@@ -133,17 +130,17 @@
   color: #fbeff4;
   font-family: roboto, sans-serif;
   font-weight: medium;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   line-height: 2.3;
   text-decoration: none;
+  margin-top: 3px;
 }
 
 .navbar-link-underline {
   background-color: #a77acd;
   width: 100%;
   height: 3px;
-  margin-left: 5px;
   border-radius: 100px;
   visibility: hidden;
   animation: slide 0.3s ease-in-out;
@@ -154,7 +151,7 @@
 }
 
 .navbar-socialbar {
-  width: 20%;
+  width: auto;
   height: 100%;
   display: flex;
   justify-content: flex-end;
@@ -162,14 +159,19 @@
 }
 
 .navbar-sociallink {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   outline: #fbeff4 solid 2px;
   border-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar-sociallink:hover {
+  opacity: 0.85;
 }
 
 .navbar-sociallink-svg {
@@ -179,54 +181,25 @@
 }
 
 @media (width <= 1000px) {
-  .navbar {
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-  }
-
   .navbar-socialbar {
     visibility: hidden;
     width: 0%;
   }
 
   .navbar-linksbar {
+    width: 100%;
+  }
+}
+
+@media (width <= 625px) {
+  .navbar-linksbar {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 0;
     margin: 0;
-  }
-
-  .navbar-linksbar-links {
-    justify-content: center;
-    margin: 10px;
-    width: auto;
-    padding: 0;
-  }
-
-  .navbar-logo {
-    margin: 0;
-  }
-}
-
-@media (width <= 625px) {
-  .navbar {
-    scale: 100%;
-  }
-
-  .divider {
-    width: 80%;
-    margin-top: 10px;
-  }
-
-  .navbar-linksbar {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
   }
 
   .navbar-link {
@@ -250,40 +223,5 @@
     width: 100%;
     height: 35px;
     margin: 0;
-  }
-}
-
-@media (width <= 400px) {
-  .navbar {
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  .navbar-linksbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .navbar-linksbar-links {
-    justify-content: center;
-    margin: 0;
-    width: auto;
-    padding: 0;
-  }
-
-  .navbar-link {
-    margin: 0;
-    padding: 0;
-  }
-
-  .navbar-link-text {
-    font-size: 16px;
-    line-height: 3;
   }
 }
