@@ -49,11 +49,13 @@
 
 @keyframes fadein {
   from {
-    transform: scale(0.75);
+    transform: perspective(1000px) rotateX(45deg) scale(0.75);
+    opacity: 0;
   }
 
   to {
-    transform: scale(1);
+    transform: perspective(1000px) rotateX(0deg) scale(1);
+    opacity: 1;
   }
 }
 
