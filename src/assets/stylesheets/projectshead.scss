@@ -1,50 +1,62 @@
 .projects-header {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    overflow: visible;
-  }
-  
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  overflow: visible;
+}
+
+.projects-title {
+  width: auto;
+  height: auto;
+  font-family: roboto, sans-serif;
+  color: #fbeff4;
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.projects-subtitle {
+  width: auto;
+  height: auto;
+  font-family: roboto, sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  background-image: linear-gradient(0deg, #6970cd, #d6b3f3);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.projects-divider {
+  width: 100%;
+  height: 4px;
+  background-color: #2e3464;
+  border-radius: 50px;
+  margin-top: 20px;
+  justify-self: center;
+  align-self: center;
+}
+
+@media screen and (width <= 768px) {
   .projects-title {
-    width: auto;
-    height: auto;
-    font-family: roboto, sans-serif;
-    color: #fbeff4;
-    font-weight: 500;
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-  
-  .projects-subtitle {
-    width: auto;
-    height: auto;
-    font-family: roboto, sans-serif;
-    font-weight: 500;
-    font-size: 36px;
-    background-image: linear-gradient(0deg, #6970cd, #d6b3f3);
-    background-size: 100%;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }
-  
-  .projects-divider {
-    width: 100%;
-    height: 4px;
-    background-color: #2e3464;
-    border-radius: 50px;
-    margin-top: 20px;
+    font-size: 18px;
   }
 
-  @media screen and (width <= 768px) {
-    .projects-title {
-      font-size: 18px;
-    }
-  
-    .projects-subtitle {
-      font-size: 24px;
-    }
+  .projects-subtitle {
+    font-size: 24px;
   }
+}
+
+@media (width <= 480px) {
+  .projects-header {
+    width: 85%;
+  }
+
+  .projects-divider {
+    width: 100%;
+  }
+}

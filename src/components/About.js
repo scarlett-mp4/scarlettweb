@@ -24,20 +24,17 @@ export default class About extends Component {
               </span>
               <span className="about-p-bold">New York State</span>
               <span className="about-p">
-                , deeply passionate about technology. I'm currently in my second
+                . I'm currently in my second
                 year of college, working towards earning a Bachelor's Degree in{" "}
               </span>
               <span className="about-p-bold">Computer Science</span>
               <span className="about-p">
-                . From a young age, I've been fascinated by computers and their
-                impact on our daily lives, which is what led me to start my
-                journey in tech.
+                .
               </span>
               <br />
               <br />
               <span className="about-p-bold">
-                I have used and feel comfortable with the following
-                technologies:
+                Here are some of the languages and technologies I've worked with:
               </span>
               <div className="about-p-list">
                 <span className="about-p-list-item">• Javascript</span>
