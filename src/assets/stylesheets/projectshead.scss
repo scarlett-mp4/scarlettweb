@@ -38,8 +38,7 @@
   background-color: #2e3464;
   border-radius: 50px;
   margin-top: 20px;
-  justify-self: center;
-  align-self: center;
+  place-self: center center;
   margin-bottom: 30px;
 }
 
@@ -56,6 +55,7 @@
 @media (width <= 480px) {
   .projects-header {
     width: 85%;
+    margin-left: 5%;
   }
 
   .projects-divider {
