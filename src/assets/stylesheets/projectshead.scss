@@ -8,6 +8,7 @@
   overflow: visible;
   z-index: 10;
   margin-top: 15px;
+  animation: fadein 0.5s;
 }
 
 .projects-title {
@@ -50,5 +51,15 @@
 
   .projects-subtitle {
     font-size: 24px;
+  }
+}
+
+@keyframes fadein {
+  from {
+    transform: scaleX(0.75);
+  }
+
+  to {
+    transform: scaleX(1);
   }
 }
