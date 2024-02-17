@@ -1,5 +1,5 @@
 .projects {
-  width: 80%;
+  width: 100%;
   height: calc(100% - 230px);
   border: transparent 1px solid;
   overflow-y: scroll;
@@ -7,10 +7,4 @@
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 100px;
-}
-
-@media (width <= 480px) {
-  .projects {
-    justify-content: center;
-  }
 }

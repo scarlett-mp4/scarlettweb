@@ -1,5 +1,5 @@
 .projects-header {
-  width: 100%;
+  width: 75%;
   height: auto;
   display: flex;
   align-items: flex-start;
@@ -18,8 +18,6 @@
   font-weight: 500;
   font-size: 22px;
   margin-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .projects-subtitle {
@@ -33,8 +31,6 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .projects-divider {
