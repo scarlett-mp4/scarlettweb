@@ -161,6 +161,10 @@
 }
 
 @media screen and (width <= 470px) {
+  .proj {
+    height: 140px;
+  }
+
   .proj-title {
     font-size: 16px;
   }
