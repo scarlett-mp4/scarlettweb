@@ -19,6 +19,7 @@ export default class Projects extends Component {
           c3="#de2349"
           n="https://media.discordapp.net/attachments/1035798463377588254/1206020619775512636/noise.jpg?ex=65da7d3a&is=65c8083a&hm=b567e4c6589af56c4d25f3d9e046ede0f0d877082750148cd4a628a1e76198ec&=&format=webp"
           to="https://github.com/Skarless/scarlettweb"
+          fadeDelay="0.1s"
         />
         <Proj
           title="Belden Jukebox 🎵"
@@ -31,6 +32,7 @@ export default class Projects extends Component {
           c3="#007cbe"
           n="https://cdn.discordapp.com/attachments/1035798463377588254/1206267614188412949/ac-texture-noise-noise-amplitude-C-1-12.jpg?ex=65db6342&is=65c8ee42&hm=768b653ed3ce540824a058660817f9f750b1d6e5de8b9aee8fb43d056dfc367f&"
           to="https://git.myitr.org/Jukebox/jukebox-web"
+          fadeDelay="0.15s"
         />
         <Proj
           title="MIPS Encoder & Decoder 🔑"
@@ -43,6 +45,7 @@ export default class Projects extends Component {
           c3="#800fbd"
           n="https://cdn.discordapp.com/attachments/1035798463377588254/1206270487337111572/fastnoise-perlin.png?ex=65db65ef&is=65c8f0ef&hm=0ddb066e85191ac3223ecaccf516433e5673414e52a246e29c2e2b25817d91b2&"
           to="https://github.com/Skarless/mips-error-detection"
+          fadeDelay="0.2s"
         />
         <Proj
           title="IllinoisTechRobotics.org 🤖"
@@ -55,6 +58,7 @@ export default class Projects extends Component {
           c3="#e86417"
           n="https://cdn.discordapp.com/attachments/1035798463377588254/1206052316411859065/noisemap.stringy.jpg?ex=65da9abf&is=65c825bf&hm=65474a93bddab1f67f4b1b6769be25b8b83fd0d52caa1e50c44861abab7cc06e&"
           to="https://git.myitr.org/scarlett/ITR-Website"
+          fadeDelay="0.25s"
         />
         <Proj
           title="Inventory Manager 🧦"
@@ -67,6 +71,7 @@ export default class Projects extends Component {
           c3="#bd5c17"
           n="https://cdn.discordapp.com/attachments/1035798463377588254/1206267614188412949/ac-texture-noise-noise-amplitude-C-1-12.jpg?ex=65db6342&is=65c8ee42&hm=768b653ed3ce540824a058660817f9f750b1d6e5de8b9aee8fb43d056dfc367f&"
           to="https://github.com/Skarless/inventory-manager"
+          fadeDelay="0.3s"
         />
         <Proj
           title="Manhunt: Minecraft Plugin 🎮"
@@ -79,6 +84,7 @@ export default class Projects extends Component {
           c3="#d0ed11"
           n="https://media.discordapp.net/attachments/1035798463377588254/1206020619775512636/noise.jpg?ex=65da7d3a&is=65c8083a&hm=b567e4c6589af56c4d25f3d9e046ede0f0d877082750148cd4a628a1e76198ec&=&format=webp"
           to="https://www.spigotmc.org/resources/manhunt-hunter-vs-speedrunner.91938/"
+          fadeDelay="0.35s"
         />
       </div>
     );

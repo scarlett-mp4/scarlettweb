@@ -16,11 +16,11 @@
 
 .divider-c {
   width: 75%;
-  height: 100px;
+  height: 130px;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
   z-index: 10;
@@ -42,6 +42,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
 }
 

@@ -14,8 +14,8 @@
   justify-content: flex-start;
   flex-direction: column;
   text-decoration: none;
-  animation: fadein .5s, gradient-flow 15s ease infinite;
   margin: 10px;
+  opacity: 0;
 }
 
 .proj::after {
@@ -36,25 +36,28 @@
 @keyframes gradient-flow {
   0% {
     background-position: 0% 50%;
+    opacity: 100;
   }
 
   50% {
     background-position: 100% 50%;
+    opacity: 100;
   }
 
   100% {
     background-position: 0% 50%;
+    opacity: 100;
   }
 }
 
 @keyframes fadein {
   from {
-    transform: perspective(1000px) rotateX(45deg) scale(0.75);
+    transform: perspective(1500px) rotateX(90deg) scale(0.75);
     opacity: 0;
   }
 
   to {
-    transform: perspective(1000px) rotateX(0deg) scale(1);
+    transform: perspective(1500px) rotateX(0deg) scale(1);
     opacity: 1;
   }
 }

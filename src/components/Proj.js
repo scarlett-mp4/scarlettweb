@@ -7,6 +7,7 @@ const ProjLink = styled.a`
     background-image: url("${props => props.n}");
   }
   background-image: linear-gradient(270deg, ${props => props.c1}, ${props => props.c2}, ${props => props.c3});
+  animation: fadein .5s ${props => props.fadeDelay}, gradient-flow 15s ease infinite ${props => props.fadeDelay};
 `;
 
 export default class Proj extends Component {
@@ -21,6 +22,7 @@ export default class Proj extends Component {
         c2={this.props.c2}
         c3={this.props.c3}
         n={this.props.n}
+        fadeDelay={this.props.fadeDelay}
       >
         <div className="proj-header">
           <div className="proj-language">
