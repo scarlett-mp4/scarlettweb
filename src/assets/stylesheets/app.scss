@@ -34,7 +34,7 @@ body {
 .container {
   background-color: transparent;
   width: 90%;
-  height: calc(100% - 40px);
+  height: calc(100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +67,7 @@ body {
 
   .container {
     width: calc(100% - 10px);
-    height: calc(100% - 40px);
+    height: 100%;
   }
 }
 

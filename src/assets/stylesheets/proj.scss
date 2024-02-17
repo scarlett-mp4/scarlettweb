@@ -1,7 +1,7 @@
 .proj {
   position: relative;
   width: 95%;
-  height: 175px;
+  height: 155px;
   border-radius: 10px;
   background-size: 400% 400%;
   overflow: visible;
@@ -162,15 +162,20 @@
 
 @media screen and (width <= 470px) {
   .proj {
-    height: 140px;
+    width: 90%;
+    height: 130px;
   }
 
   .proj-title {
     font-size: 16px;
+    margin-top: 0;
+    margin-left: 4px;
   }
 
   .proj-desc {
     font-size: 12px;
+    margin-top: 2px;
+    margin-left: 4px;
   }
 
   .proj-time {
