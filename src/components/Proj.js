@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import "../assets/stylesheets/proj.scss";
 
@@ -11,6 +11,35 @@ const ProjLink = styled.a`
 `;
 
 export default class Proj extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      scrollPosition: 0,
+    };
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  handleScroll() {
+    const position = window.pageYOffset;
+    this.setState({ scrollPosition: position });
+    console.log(position);
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  isVisible(itemPosition) {
+    const { scrollPosition } = this.state;
+    return itemPosition - scrollPosition < 100;
+  }
+
+
+  
   render() {
     return (
       <ProjLink
