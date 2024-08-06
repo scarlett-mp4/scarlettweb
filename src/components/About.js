@@ -20,11 +20,11 @@ export default class About extends Component {
               <span className="about-p">Hello, my name is </span>
               <span className="about-p-bold">Scarlett</span>
               <span className="about-p">
-                . I'm a nineteen-year-old developer from{" "}
+                . I'm a twenty-year-old developer from{" "}
               </span>
               <span className="about-p-bold">New York State</span>
               <span className="about-p">
-                . I'm currently in my second
+                . I'm currently in my third
                 year of college, working towards earning a Bachelor's Degree in{" "}
               </span>
               <span className="about-p-bold">Computer Science</span>
