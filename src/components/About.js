@@ -3,6 +3,31 @@ import { motion } from "framer-motion";
 import "../assets/stylesheets/about.scss";
 
 export default class About extends Component {
+  getAgeInWords(birthday) {
+    const today = new Date();
+    const birthDate = new Date(birthday);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDifference = today.getMonth() - birthDate.getMonth();
+
+    if (
+      monthDifference < 0 ||
+      (monthDifference === 0 && today.getDate() < birthDate.getDate())
+    ) {
+      age--;
+    }
+
+    const ageInWords = {
+      20: "twenty-year-old",
+      21: "twenty-one-year-old",
+      22: "twenty-two-year-old",
+      23: "twenty-three-year-old",
+      24: "twenty-four-year-old",
+      25: "twenty-five-year-old",
+    };
+
+    return ageInWords[age] || `${age}-year-old`;
+  }
+
   render() {
     return (
       <motion.div
@@ -20,21 +45,20 @@ export default class About extends Component {
               <span className="about-p">Hello, my name is </span>
               <span className="about-p-bold">Scarlett</span>
               <span className="about-p">
-                . I'm a twenty-year-old developer from{" "}
+                . I'm a {this.getAgeInWords('2004-05-17')} developer from{" "}
               </span>
               <span className="about-p-bold">New York State</span>
               <span className="about-p">
-                . I'm currently in my third
-                year of college, working towards earning a Bachelor's Degree in{" "}
+                . I'm currently in my third year of college, working towards
+                earning a Bachelor's Degree in{" "}
               </span>
               <span className="about-p-bold">Computer Science</span>
-              <span className="about-p">
-                .
-              </span>
+              <span className="about-p">.</span>
               <br />
               <br />
               <span className="about-p-bold">
-                Here are some of the languages and technologies I've worked with:
+                Here are some of the languages and technologies I've worked
+                with:
               </span>
               <div className="about-p-list">
                 <span className="about-p-list-item">• Javascript</span>
