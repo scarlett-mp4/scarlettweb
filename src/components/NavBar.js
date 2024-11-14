@@ -62,7 +62,7 @@ export default class NavBar extends Component {
               </NavLink>
               <NavLink
                 className="navbar-link"
-                to="mailto:contactme@kadan.live"
+                to="mailto:contact@kadan.live"
               >
                 <div className="navbar-link-content">
                   <img className="navbar-link-svg" src={ContactSVG} alt="" />
