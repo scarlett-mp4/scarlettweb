@@ -5,7 +5,6 @@ import ProjectsSVG from "../assets/svgs/projects.svg";
 import ContactSVG from "../assets/svgs/contact.svg";
 import GithubSVG from "../assets/svgs/github.svg";
 import LinkedInSVG from "../assets/svgs/linkedin.svg";
-import TwitterSVG from "../assets/svgs/twitter.svg";
 import "../assets/stylesheets/navbar.scss";
 
 export default class NavBar extends Component {
@@ -76,14 +75,6 @@ export default class NavBar extends Component {
             </div>
           </div>
           <div className="navbar-socialbar">
-            <a
-              className="navbar-sociallink"
-              href="https://twitter.com/xSkarless"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img className="navbar-sociallink-svg" src={TwitterSVG} alt="" />
-            </a>
             <a
               className="navbar-sociallink"
               href="https://github.com/Skarless"
