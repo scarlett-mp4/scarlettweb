@@ -20,7 +20,7 @@ export default class TempRoute extends Component {
         justifyContent: "center",
         alignItems: "center",
         position: "absolute",
-        bottom: "50px",
+        bottom: "20px",
         left: "0",
         zIndex: "1",
     };
@@ -35,7 +35,7 @@ export default class TempRoute extends Component {
 
     textstyle = {
         color: "white",
-        fontSize: "32px",
+        fontSize: "18px",
         fontWeight: "400",
         textAlign: "center",
         margin: "0",
@@ -53,7 +53,7 @@ export default class TempRoute extends Component {
         fontFamily: "roboto, sans-serif",
         width: "auto",
         height: "auto",
-        marginTop: "10px",
+        marginTop: "5px",
     };
 
     render() {
