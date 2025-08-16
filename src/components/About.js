@@ -49,7 +49,7 @@ export default class About extends Component {
               </span>
               <span className="about-p-bold">New York State</span>
               <span className="about-p">
-                . I'm currently in my third year of college, working towards
+                . I'm currently in my fourth year of college, working towards
                 earning a Bachelor's Degree in{" "}
               </span>
               <span className="about-p-bold">Computer Science</span>
