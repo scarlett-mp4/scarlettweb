@@ -1,0 +1,12 @@
+html, body {
+  height: 300vh;
+  width: 100vw;
+  overflow: scroll;
+}
+
+body {
+  position: relative;
+  background-color: #210225;
+  padding: 0px;
+  margin: 0px;
+}
